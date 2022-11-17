@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(245, 235, 235);
+}
+
+/* Блок 1 */
+/*некорректно работает - меняю цвет элемента списка (а не маркер(?))*/
+ul {
+    list-style-type: circle;
+}
+
+li:nth-child(1) {
+    color:#FF0000;
+}
+
+li:nth-child(2) {
+    color: #FFB800;
+}
+
+li:nth-child(3) {
+    color: #FAFF00;
+}
+
+li:nth-child(4) {
+    color: #52FF00;
+}
+
+li:nth-child(5) {
+    color: #00FFF0;
+}
+
+li:nth-child(6) {
+    color: #0029FF;
+}
+
+li:nth-child(6) {
+    color: #7000FF;
+}
+
+
+/* Блок 2 */
+/* некорректно работает - первая строка смещается вправо */
+.proetry {
+    font-size: 13px;
+    line-height: 18px;
+    margin-left: 100px; /*для наглядности*/
+}
+
+p {    
+    counter-increment: new-counter;
+}
+
+p::before {
+    content: counter(new-counter) "- ";
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+
+/* Блок 3 */
